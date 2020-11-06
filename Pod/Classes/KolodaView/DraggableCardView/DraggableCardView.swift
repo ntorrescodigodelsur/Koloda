@@ -235,7 +235,7 @@ public class DraggableCardView: UIView, UIGestureRecognizerDelegate {
             
             dragBegin = true
             
-            animationDirectionY = touchLocation.y >= frame.size.height / 2 ? -1.0 : 1.0
+            animationDirectionY = 1
             layer.rasterizationScale = UIScreen.main.scale
             layer.shouldRasterize = true
             delegate?.card(cardPanBegan: self)
